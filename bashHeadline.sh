@@ -12,7 +12,7 @@
 # @arg $@ Text to write in the headline
 #
 function headline() {
-    local TEXT="$(printf '%s ' "$@")"
+    local TEXT="$(printf '%s' "$@")"
     local COLS=$(tput cols)
     local PADDING=$(printf '%0.s ' $(seq 1 $COLS))
 
@@ -28,17 +28,17 @@ function headline() {
 
     #Write starting sequence of #
     printf "%0.s#" $(seq 1 $COLS)
-    printf '\n'
+    printf "\n"
 
     #Write headline text section
-    printf '#'
+    printf "#"
     printf "%*.*s" 0 ${PREFIX_SPACING} "$PADDING"
     printf "%s" "${TEXT}"
     printf "%*.*s" 0 ${SUFFIX_SPACING} "$PADDING"
-    printf '#'
-    printf '\n'
+    printf "#"
+    printf "\n"
 
     #Write ending sequence of #
     printf "%0.s#" $(seq 1 $COLS)
-    printf '\n'
+    printf "\n"
 }
