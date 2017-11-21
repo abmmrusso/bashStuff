@@ -6,10 +6,8 @@
 
 Writes the given text within a '#' delimited headline
 
-The function will do its best to fill the whole of the terminal's
-current horizontal space and try to centre the given text in the middle.
-If using text that is wider than the terminal, headline formatting will 
-break.
+The function will do its best to centre the generated headline, with the
+text being formatted to central alignment to the best possible effort.
 
 #### Example
 

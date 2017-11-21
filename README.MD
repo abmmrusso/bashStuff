@@ -36,6 +36,13 @@ sudo emerge -pv shunit2
 brew install shunit2
 ```
 
+## Documentation
+
+REFERENCE.MD is generated with the use of [shdoc](https://github.com/reconquest/shdoc) using the command line
+```
+cat *.sh | shdoc.awk > REFERENCE.md
+```
+
 ## The Scripts
 
 The following are the scripts provided on this repo.
