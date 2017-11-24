@@ -1,4 +1,4 @@
-#!/usr/bin/env shunit2
+#!/usr/bin/env bash
 
 . $(dirname "${BASH_SOURCE[0]}")/../bashHeadline.sh
 
@@ -100,3 +100,5 @@ testMultilineHeadlineTextWithPhrase() {
 	local expected_output="$(printf '##########\n#  This  #\n#  is a  #\n#  test  #\n# phrase #\n##########\n' ; echo x)"
 	assertEquals "${expected_output%x}" "${headline_output%x}"
 }
+
+. /usr/bin/shunit2
