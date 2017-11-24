@@ -40,7 +40,7 @@ brew install shunit2
 
 REFERENCE.MD is generated with the use of [shdoc](https://github.com/reconquest/shdoc) using the command line
 ```
-cat *.sh | shdoc.awk > REFERENCE.md
+cat *.sh | shdoc > REFERENCE.md
 ```
 
 ## The Scripts
@@ -57,6 +57,13 @@ To use the function, just source the file using `. bashHeadline.sh`.
 From that point onward, you should be able to invoke the `headline` function like this:
 ```bash
 $ headline hello
+##################################################
+#                     hello                      #
+##################################################
+```
+You can also call the `banner` function that works as a simple _alias_ function for `headline`
+```bash
+$ banner hello
 ##################################################
 #                     hello                      #
 ##################################################

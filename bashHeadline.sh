@@ -93,3 +93,16 @@ function headline() {
 
     unset -f writeHeadlineLine
 }
+
+# @description Alias function to headline() function
+#
+# @example
+#   banner THIS IS A HEADLINE
+#   banner "THIS IS A HEADLINE"
+#
+# @arg $@ Text to write in the headline
+#
+# @see headline()
+banner() {
+    headline $@
+}

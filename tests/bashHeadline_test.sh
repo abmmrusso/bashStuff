@@ -101,4 +101,11 @@ testMultilineHeadlineTextWithPhrase() {
 	assertEquals "${expected_output%x}" "${headline_output%x}"
 }
 
+testBannerAliasFunctionWorks() {
+	stty cols 10
+	local headline_output="$(banner even; echo x)"
+	local expected_output="$(printf '##########\n#  even  #\n##########\n' ; echo x)"
+	assertEquals "${expected_output%x}" "${headline_output%x}"
+}
+
 . /usr/bin/shunit2

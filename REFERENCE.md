@@ -1,5 +1,6 @@
 
 * [headline()](#headline)
+* [banner()](#banner)
 
 
 ## headline()
@@ -19,4 +20,23 @@ headline "THIS IS A HEADLINE"
 ### Arguments
 
 * **...** (Text): to write in the headline
+
+## banner()
+
+Alias function to headline() function
+
+#### Example
+
+```bash
+banner THIS IS A HEADLINE
+banner "THIS IS A HEADLINE"
+```
+
+### Arguments
+
+* **...** (Text): to write in the headline
+
+#### See also
+
+* [headline()](#headline())
 
