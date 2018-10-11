@@ -108,4 +108,4 @@ testBannerAliasFunctionWorks() {
 	assertEquals "${expected_output%x}" "${headline_output%x}"
 }
 
-. /usr/bin/shunit2
+. $(which shunit2)
